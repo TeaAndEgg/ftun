@@ -38,10 +38,10 @@ FTUN
 
 # 付费/续费 与联系方式
 
-**邮件**: egg-software@outlook.com
-**软件发布地址**: https://github.com/TeaAndEgg/ftun
-**付费方式**: 支付前加作者微信, 支付后作者给予token码即可使用.
-**联系作者**: 微信搜索 **cook-egg**
+- **邮件**: egg-software@outlook.com
+- **软件发布地址**: https://github.com/TeaAndEgg/ftun
+- **付费方式**: 支付前加作者微信, 支付后作者给予token码即可使用.
+- **联系作者**: 微信搜索 **cook-egg**
 
 ![](images/wx.png)
 
