@@ -13,6 +13,45 @@ FTUN
 高度扩展性的服务端插件系统，易于结合自身需求进行功能扩展。
 服务端和客户端 UI 页面。
 
+# 使用方法
+
+配置文件/etc/ftuns.ini，执行ftunsd启动服务器
+
+```ini
+[common]
+bind_addr = 0.0.0.0
+bind_port = 7000
+token = 12345678
+```
+
+/etc/ftunc.ini，执行ftuncd启动客户端
+
+```ini
+[common]
+server_addr = domain.ip
+server_port = 7000
+token = 12345678
+
+# 创建一个ssh随机端口管道
+[ssh_random]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 0
+
+# 创建一个ssh固定端口管道
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 6001
+```
+
+连接
+
+```
+ssh root@domain.ip -p 6001
+```
 # 关于购买
 
 疫情之下国内环境不佳,面临生活压力,**决定不再免费提供该软件**,软件分为两部分,可单独购买.
@@ -22,6 +61,8 @@ FTUN
 
 - ftunsd 中转服务器,**面向企业**.
   自行购买VPS并部署中转服务器,流量安全自己有把握.
+
+
 
 **注意** ftunsd 仅提供AMD64/x86版本
 
