@@ -22,7 +22,8 @@ FTUN
 
 - ftunsd 中转服务器,**面向企业**.
   自行购买VPS并部署中转服务器,流量安全自己有把握.
-  
+
+[AMD64/x86下载](https://github.com/TeaAndEgg/ftun/releases)
 
 ## 资费
 
